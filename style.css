@@ -5,38 +5,58 @@ body {
 }
 
 a:link {
-  color: #f58427;
+  color: hotpink;
 }
 
 a:visited {
-  color: #ffc34a;
+  color: blueviolet;
 }
 
 a:hover {
-  color: #ba1c07;
+  color: deeppink;
 }
 
-div {
-  width: 100px;
-  height: 100px;
+ul {
+  color: #ff82e6;
+  background-color: #633ad3;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+@keyframes myAnim {
+  0% {background-color: hotpink; left: 20px; top: 200px; transform: rotate(0deg)}
+  20% {background-color: deeppink; left: 100px; top: 0px;}
+  40% {background-color: darkviolet; left: 180px; top: 200px;}
+  60% {background-color: mediumblue; left: 0px; top: 100px;}
+  80% {background-color: blueviolet; left: 200px; top: 100px;}
+  100% {background-color: hotpink; left: 20px; top: 200px; transform: rotate(720deg)}
+}
+
+.h1 {
+  color: mediumvioletred;
+}
+
+.subhead {
+  color: rgb(17, 17, 255);
+}
+
+.p1 {
+  color: #cb62ff;
+}
+
+.starAnim {
+  width: 50px;
+  height: 50px;
   background-color: hotpink;
+  position: relative;
   animation-name: myAnim;
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 
-@keyframes myAnim {
-  0% {background-color: hotpink; left: 20px; top: 200px;}
-  20% {background-color: deeppink; left: 100px; top: 0px;}
-  40% {background-color: darkviolet; left: 180px; top: 200px;}
-  60% {background-color: mediumblue; left: 0px; top: 100px;}
-  80% {background-color: blueviolet; left: 200px; top: 100px;}
-  100% {background-color: hotpink; left: 20px; top: 200px;}
-}
-
-.button {
-  border: none;
-  color: white;
+.butt {
+  border-style: outset;
+  color: hotpink;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
