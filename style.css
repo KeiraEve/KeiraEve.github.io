@@ -16,6 +16,24 @@ a:hover {
   color: #ba1c07;
 }
 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: hotpink;
+  animation-name: myAnim;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myAnim {
+  0% {background-color: hotpink; left: 20px; top: 200px;}
+  20% {background-color: deeppink; left: 100px; top: 0px;}
+  40% {background-color: darkviolet; left: 180px; top: 200px;}
+  60% {background-color: mediumblue; left: 0px; top: 50px;}
+  80% {background-color: blueviolet; left: 200px; top: 50px;}
+  100% {background-color: hotpink; left: 20px; top: 200px;}
+}
+
 .button {
   border: none;
   color: white;
