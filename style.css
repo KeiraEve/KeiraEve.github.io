@@ -29,8 +29,8 @@ div {
   0% {background-color: hotpink; left: 20px; top: 200px;}
   20% {background-color: deeppink; left: 100px; top: 0px;}
   40% {background-color: darkviolet; left: 180px; top: 200px;}
-  60% {background-color: mediumblue; left: 0px; top: 50px;}
-  80% {background-color: blueviolet; left: 200px; top: 50px;}
+  60% {background-color: mediumblue; left: 0px; top: 100px;}
+  80% {background-color: blueviolet; left: 200px; top: 100px;}
   100% {background-color: hotpink; left: 20px; top: 200px;}
 }
 
