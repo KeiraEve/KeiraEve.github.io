@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Fun</title>
+    <style>
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: palevioletred;
+        }
+        .logo {
+            font-size: 24px;
+            color: hotpink;
+        }
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+        }
+        .site-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            background-color: blueviolet;
+        }
+        .site-nav li {
+            padding: 0 5px;
+        }
+        @media (max-width: 600px) {
+            .site-nav {
+                flex-direction: column;
+                width: 100%;
+                padding: 10px;
+                align-items: flex-start;
+            }
+            .logo {
+                align-self: center;
+                font-size: 2em;
+            }
+            .nav-links {
+                flex-direction: column;
+                padding: 5px;
+                line-height: 2;
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="site-nav">
+            <div class="logo">MySite</div>
+            <ul class="nav-links">
+                <li><a href="myflex.html">Flex</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tablePage.html">Tables</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
