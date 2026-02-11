@@ -3,12 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>body{text-align: center} table{margin:auto}</style>
     <title>Tables</title>
 </head>
 <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="blog/index.html">My Blog</a>
+      <a href="resume.html">Resume</a>
+      <a href="tablePage.html" aria-current="page">Tables</a>
+      <a href="letterWebpage.html">Letter</a>
+      <a href="fun.html">Fun</a>
+    </nav>
+    
+    <header class="site-header">
+      <h1>Tables</h1>
+    </header>
+    
+    <div class="page-container">
     <table>
-        <caption>Office Hours</caption>
+        <caption class="super-special">Office Hours</caption>
         <thead>
             <tr>
                 <th scope="col">Day</th>
@@ -26,7 +43,7 @@
     </table>
 
     <table>
-        <caption>Fun Table</caption>
+        <caption class="super-special">Fun Table</caption>
         <thead>
             <tr>
                 <th scope="col">Color</th>
@@ -57,5 +74,14 @@
             </tr>
         </tbody>
     </table>
+    </div>
+    
+    <footer>
+      <p class="footer-text">
+        <img src="gifs/rainbow-star-divider.gif" alt="Rainbow star divider" class="subtle--center"><br>
+        🔮 Made for fun by Keira Chapman 🔮<br>
+        &copy; 2026
+      </p>
+    </footer>
 </body>
 </html>

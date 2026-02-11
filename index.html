@@ -2,44 +2,46 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Keira's Homepage</title>
+  <style>body{ text-align: center }</style>
 </head>
 
 <body>
 
-<div>
-  <form action="onePagePractice.html" class="butt">
-    <input type="submit" value="Tutorials"/>
-  </form>
-  <form action="letterWebpage.html" class="butt">
-    <input type="submit" value="Letter"/>
-  </form>
-  <button type="button" class="butt" action="tablePage.html">Tables</button>
-</div>
+<nav>
+  <a href="index.html" aria-current="page">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="blog/index.html">My Blog</a>
+  <a href="resume.html">Resume</a>
+  <a href="tablePage.html">Tables</a>
+  <a href="letterWebpage.html">Letter</a>
+  <a href="fun.html">Fun</a>
+</nav>
 
-<h1 class="h1">Keira’s Homepage</h1>
+<header class="site-header">
+  <h1>Keira’s Homepage</h1>
+  <p class="site-header--subtitle">My humble corner of the web.</p>
+</header>
 
-<img src="galaxy.jpg" alt="Galaxy!!!!">
+<img class="head-image" src="images/galaxy.jpg" alt="Galaxy!!!!" style="cursor: none">
 
-<p class="p1">My name is Keira. I enjoy drawing, writing, and discussing politics.</p>
-<p class="p1">Check out <a href="https://www.pbs.org">PBS</a>, an educational platform with fun content for all ages that is currently being defunded.</p>
+<p style="font-size: 16px; color: rgb(255, 210, 230)">Welcome to my site! I like to use HTML to code fun websites, and I have a blog linked here.</p>
 
-<p class="p1">These are some of my favorite shows and games (in no particular order)!</p>
-<!--maybe could put them in order-->
-<ul>
-  <li>Soul Eater</li>
-  <li>Avatar: The Last Airbender</li>
-  <li>Ace Attorney</li>
-  <li>Land of the Lustrous</li>
-  <li>NBC Hannibal</li>
-</ul>
+<h2 class="shifting-color--galaxy">Look at this cool star!</h2>
 
-<h2 class="subhead">Look at this cool star!</h2>
+<div class="star-anim" style="margin: auto"></div>
 
-<div class="starAnim"></div>
+<p>How fun is that?</p>
 
-<p class="p1">How fun is that?</p>
+<footer>
+  <p class="footer-text">
+    <img src="gifs/rainbow-star-divider.gif" alt="Rainbow star divider" class="subtle--center"><br>
+    🔮 Made for fun by Keira Chapman 🔮<br>
+    &copy; 2026
+ </p>
+</footer>
 
 </body>
 </html>
