@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Macondo Swash Caps|Ballet|Monsieur La Doulaise|Spectral");
 
 a:link {
-  color: hotpink;
+  color: deeppink;
 }
 
 a:visited {
@@ -9,7 +9,8 @@ a:visited {
 }
 
 a:hover {
-  color: deeppink;
+  color: rgb(76, 23, 160);
+  font-weight: bold;
 }
 
 a[aria-current="page"] {
