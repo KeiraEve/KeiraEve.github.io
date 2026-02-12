@@ -262,6 +262,10 @@ ul li {
   display: grid;
 }
 
+.pink-cursor {
+  cursor: url("../cursors/normal.cur"), auto;
+}
+
 .row {
   margin: 10px 0 10px -15px;
   max-width: 750px;
