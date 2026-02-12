@@ -177,6 +177,7 @@ time {
 
 tr:hover {
   color: blueviolet;
+  text-decoration: underline overline wavy;
 }
 
 ul {
@@ -267,7 +268,7 @@ ul li {
 }
 
 .pink-cursor {
-  cursor: url("../cursors/normal.cur"), auto;
+  cursor: url("../cursors/plain.cur"), auto;
 }
 
 .row {
@@ -338,6 +339,11 @@ ul li {
   line-height: 1;
 }
 
+#black:hover {
+  color: black;
+  background-color: rgb(193, 111, 147);
+}
+
 #button-bg {
   font-size: 0.8rem;
 }
@@ -345,4 +351,19 @@ ul li {
 #button-bg:hover {
   background-color: rgb(30, 17, 110);
   font-size: 0.85rem;
+}
+
+#chartreuse:hover {
+  color: #738c11;
+  background-color: #e0d72a;
+}
+
+#pink:hover {
+  color: rgb(255, 140, 199);
+  background-color: rgb(200, 0, 93);
+}
+
+#plum:hover {
+  color: rgb(186, 83, 157);
+  background-color: rgb(50, 15, 38);
 }
