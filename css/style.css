@@ -50,7 +50,6 @@ body {
   background-position: center;
   background-color: black;
   color: white;
-  cursor: url("../cursors/normal.cur"), auto;
   font-family: 'Spectral', Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -265,6 +264,10 @@ ul li {
   margin: auto;
   padding: 30px;
   display: grid;
+}
+
+.pink-cursor {
+  cursor: url("../cursors/normal.cur"), auto;
 }
 
 .row {
