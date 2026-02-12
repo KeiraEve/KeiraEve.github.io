@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Macondo Swash Caps|Ballet|Monsieur La Doulaise|Spectral");
 
 a {
-  cursor: url("../cursors/link.ani");
+  cursor: url("../cursors/link.cur");
 }
 
 a:link {
