@@ -5,7 +5,13 @@ const headingA = document.querySelector("#headingA");
 
 buttonA.addEventListener("click", (function() {
     const name = prompt("What is your name?");
-    alert(`Hello ${name}, nice to see you!`);
-    //SET HEADER TEXT WITH USER INPUT
-    headingA.textContent = `Welcome, ${name}!`;
+    if (name == null || name === ""){
+        alert("You couldn't even bother to type something?");
+        headingA.textContent = "Try again!";
+        pA.textContent = "Maybe you should try typing something this time.";
+    }else{
+        alert(`Hello ${name}, nice to see you!`);
+        headingA.textContent = `Welcome, ${name}!`;
+        pA.textContent = "Take your coat off, stay a while!";
+    }
 }));
