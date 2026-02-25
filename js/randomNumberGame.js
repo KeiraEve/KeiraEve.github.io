@@ -1,28 +1,3 @@
-console.log("Hello World!");
-
-//First and last slide example
-const buttonA = document.querySelector("#buttonA");
-const headingA = document.querySelector("#headingA");
-buttonA.addEventListener("click", (function() {
-    const name = prompt("What is your name?");
-    if (name == null || name === ""){
-        alert("You couldn't even bother to type something?");
-        headingA.textContent = "Try again!";
-        pA.textContent = "Maybe you should try typing something this time.";
-    }else{
-        alert(`Hello ${name}, nice to see you!`);
-        headingA.textContent = `Welcome, ${name}!`;
-        pA.textContent = "Take your coat off, stay a while!";
-    }
-}));
-
-//Second slide example
-const textBox = document.querySelector("#textBox");
-const output = document.querySelector("#output");
-textBox.addEventListener("keypress", (event => {
-    output.textContent = `You pressed ${event.key}.`;
-}));
-
 //A first splash into JS practice
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 
@@ -31,9 +6,9 @@ const lastResult = document.querySelector(".lastResult");
 const lowOrHi = document.querySelector(".lowOrHi");
 const guessSubmit = document.querySelector(".guessSubmit");
 const guessField = document.querySelector(".guessField");
+const resetButton = document.querySelector("#resetButton");
 
 let guessCount = 1;
-let resetButton;
 
 function checkGuess(){
     const userGuess = Number(guessField.value);
@@ -71,15 +46,12 @@ guessSubmit.addEventListener("click", checkGuess);
 function setGameOver(){
     guessField.disabled = true;
     guessSubmit.disabled = true;
-    resetButton = document.createElement("button");
-    resetButton.textContent = "Start new game";
-    document.body.append(resetButton);
+    resetButton.disabled = false;
     resetButton.addEventListener("click", resetGame);
 }
 
 function resetGame(){
     guessCount = 1;
-  
     const resetParas = document.querySelectorAll(".resultParas p");
     for (const resetPara of resetParas) {
       resetPara.textContent = "";
@@ -89,6 +61,7 @@ function resetGame(){
   
     guessField.disabled = false;
     guessSubmit.disabled = false;
+    resetButton.disabled = true;
     guessField.value = "";
     guessField.focus();
   
