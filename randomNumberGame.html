@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="myJS.js" defer></script>
+    <script src="js/randomNumberGame.js" defer></script>
     <style>body{text-align: center} table{margin:auto}</style>
     <title>Random Number Game</title>
 </head>
@@ -30,10 +30,11 @@
         <button type="submit" class="guessSubmit">Submit guess</button>
     </div>
 
-    <div class="resultParas" style="color: white">
-      <p class="guesses"></p>
-      <p class="lastResult"></p>
-      <p class="lowOrHi"></p>
+    <div class="resultParas">
+      <p class="guesses" style="color: white"></p>
+      <p class="lastResult" style="color: white"></p>
+      <p class="lowOrHi" style="color: white"></p>
+      <button type="submit" id="resetButton" disabled>Reset game</button>
     </div>
 </div>
     
@@ -44,5 +45,6 @@
         &copy; 2026
     </p>
 </footer>
+
 </body>
 </html>

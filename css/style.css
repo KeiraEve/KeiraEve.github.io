@@ -62,6 +62,12 @@ button {
   margin: 10px;
 }
 
+button:disabled {
+  color: #ffffffa1;
+  font-weight: 200;
+  font-variant: small-caps;
+}
+
 button:hover {
   background-color: hotpink;
   border-color: hotpink;
