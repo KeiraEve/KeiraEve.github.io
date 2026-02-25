@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="myJS.js" defer></script>
+    <style>body{text-align: center} table{margin:auto}</style>
+    <title>Random Number Game</title>
+</head>
+<body class="pink-cursor">
+<nav>
+    <a href="index.html">Home</a>
+    <a href="fun.html">Back</a>
+</nav>
+    
+<header class="site-header">
+    <h1>Random Number Game</h1>
+</header>
+    
+<div class="page-container">
+    <h2 class="shifting-color--galaxy">Number Guessing Game</h2>
+
+    <p>I have selected a <span class="special">random number</span> between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+
+    <div class="form">
+        <label for="guessField">Enter a guess: </label>
+        <input type="number" min="1" max="100" required id="guessField" class="guessField" />
+        <button type="submit" class="guessSubmit">Submit guess</button>
+    </div>
+
+    <div class="resultParas" style="color: white">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+</div>
+    
+<footer>
+    <p class="footer-text">
+        <img src="gifs/rainbow-star-divider.gif" alt="Rainbow star divider" class="subtle--center"><br>
+        🔮 Made for fun by Keira Chapman 🔮<br>
+        &copy; 2026
+    </p>
+</footer>
+</body>
+</html>
