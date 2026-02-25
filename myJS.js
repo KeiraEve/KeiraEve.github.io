@@ -15,3 +15,9 @@ buttonA.addEventListener("click", (function() {
         pA.textContent = "Take your coat off, stay a while!";
     }
 }));
+
+const textBox = document.querySelector("#textBox");
+const output = document.querySelector("#output");
+textBox.addEventListener("keypress", (event => {
+    output.textContent = `You pressed ${event.key}.`;
+}));
