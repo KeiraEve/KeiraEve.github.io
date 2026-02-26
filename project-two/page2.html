@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="project-two-style.css">
+    <link rel="stylesheet" href="../css/project-two-style.css">
     <title>Character Selection</title>
 </head>
 <body>
 
 <section class="container">
-    <form id="characterForm" action="page3.html" method="get"></form>
+    <form id="characterForm" action="page3.html" method="get">
+        <h1>Choose Your Character</h1>
+        <fieldset>
+            <legend>Choose Your Character</legend>
+            <input type="radio" name="character" id="warrior">
+            <label for="warrior"><strong>Aria, the Warrior:</strong> Strong and brave, with the ability to overcome physical obstacles.</label>
+            <input type="radio" name="character" id="mage">
+            <label for="mage"><strong>Eldrin, the Mage:</strong> Wise and knowledgeable, with the power to solve puzzles and cast spells.</label>
+            <input type="radio" name="character" id="rogue">
+            <label for="rogue"><strong>Tara, the Rogue:</strong> Quick and cunning, with skills in stealth and persuasion.</label>
+        </fieldset>
+        <input type="submit" value="Continue">
+    </form>
 </section>
 
 </body>
