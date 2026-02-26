@@ -5,15 +5,19 @@ a {
 }
 
 a:link {
-  color: deeppink;
+  color: rgb(187, 4, 101);
 }
 
 a:visited {
-  color: blueviolet;
+  color: rgb(89, 1, 172);
+  border-color: rgb(244, 190, 255);
+  background-color: rgb(220, 155, 245);
 }
 
 a:hover {
-  color: rgb(76, 23, 160);
+  color: rgb(27, 4, 65);
+  border-color: rgb(248, 145, 196);
+  background-color: rgb(238, 115, 177);
   font-weight: bold;
 }
 
@@ -21,17 +25,11 @@ a[aria-current="page"] {
   border-color: rgb(30, 17, 110);
   background-color: rgb(30, 17, 110);
   color: slateblue;
+  opacity: 0.9;
 }
 
 a[aria-current="page"]:hover {
   font-size: 1rem;
-}
-
-a[aria-current="true"] {
-  border-color: rgb(220, 120, 180);
-  background-color: hotpink;
-  color: rgba(138, 43, 226, 0.8);
-  opacity: 0.7;
 }
 
 article {
