@@ -9,10 +9,34 @@
 <body>
     
 <section class="container">
-    <form action="" method="get">
+    <form id="itemForm" action="page4.html" method="get">
         <h1>Pack Your Bag</h1>
         <p>Select the supplies you wish to take on your quest. Choose wisely, as you can only carry a limited amount.</p>
+        <fieldset>
+            <legend>Pack Your Bag</legend>
+            <div class="container">
+                <input type="checkbox" name="item" id="food">
+                <label for="food"><strong>Food:</strong> Essential for energy.</label>
+            </div>
+            <div class="container">
+                <input type="checkbox" name="item" id="water">
+                <label for="water"><strong>Water:</strong> Hydration is key!</label>
+            </div>
+            <div class="container">
+                <input type="checkbox" name="item" id="potions">
+                <label for="potions"><strong>Magic Potions:</strong> For health and mana.</label>
+            </div>
+            <div class="container">
+                <input type="checkbox" name="item" id="maps">
+                <label for="maps"><strong>Maps:</strong> Don't get lost in the wilderness!</label>
+            </div>
+            <div class="container">
+                <input type="checkbox" name="item" id="sword">
+                <label for="sword"><strong>Sword:</strong> Fend off those pesky foes!</label>
+            </div>
+        </fieldset>
     </form>
+    <input type="submit" value="Continue">
 </section>
 
 </body>
