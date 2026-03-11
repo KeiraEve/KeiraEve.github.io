@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/form.js" defer></script>
+    <title>Form</title>
+</head>
+
+<body>
+    <main>
+        <form id="sienaForm">
+            <label for="email">Siena University Email: </label>
+            <input type="email" name="email" id="email" placeholder="Enter your Siena email..." required>
+
+            <label for="sienaID">Siena ID: </label>
+            <input
+                type="text"
+                name="sienaID"
+                id="sienaID"
+                placeholder="Enter your Siena ID..."
+                pattern="90\d{7}"
+                title="Siena ID must be 9 digits starting with 90"
+                required
+            >
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
