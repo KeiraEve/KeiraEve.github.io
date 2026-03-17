@@ -29,10 +29,12 @@
     </section>
 
     <script>
-        let choice = document.getElementById("pathChoice");
+        let choiceSelection = document.getElementById("pathChoice");
         let form = document.getElementById("mainForm");
 
         function backgroundChange() {
+            const choice = choiceSelection.option.value;
+            console.log(choice); 
             if (choice === "placeholder"){
                 body.style.background = "white";
             }else if (choice === "strength") {
