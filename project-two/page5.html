@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/project-two-style.css">
+    <title>The Journey Continues</title>
+</head>
+
+<body>
+    <section class="container">
+        <h1>The Journey Continues</h1>
+        <p>With the guardian's riddle behind you, the path forward splits into three. Each route is known to favor
+            certain traits: strength, wisdom, or stealth. Choose your path wisely, as it will influence the challenges
+            you face ahead.</p>
+
+        <form action="page6.html" method="submit" id="mainForm">
+            <select name="pathChoice" id="pathChoice">
+                <option value="placeholder">~ Please choose an option ~</option>
+                <option value="strength">Strength path</option>
+                <option value="wisdom">Wisdom path</option>
+                <option value="stealth">Stealth path</option>
+            </select>
+            <input id="submitButton" type="submit" value="Continue on Your Journey">
+        </form>
+
+        <p>Your choice will not only test your abilities but also reveal deeper truths about your character.</p>
+    </section>
+
+    <script>
+        let choice = document.getElementById("pathChoice");
+        let form = document.getElementById("mainForm");
+
+        function backgroundChange() {
+            if (choice === "placeholder"){
+                body.style.background = "white";
+            }else if (choice === "strength") {
+                body.style.background = "red";
+            }else if (choice === "wisdom") {
+                body.style.background = "yellow";
+            }else if (choice === "stealth") {
+                body.style.background = "blue";
+                form.action = "page5b.html";
+            }
+        }
+
+        choice.addEventListener("change", backgroundChange);
+    </script>
+</body>
+
+</html>
