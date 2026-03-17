@@ -14,27 +14,30 @@
         <p>As you venture deeper into the Dark Forest, you encounter a mystical guardian. The guardian blocks your path and poses a riddle:</p>
         <blockquote>"I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?”</blockquote>
         <label for="answer">Your Answer:</label>
-        <input type="text" name="riddleAnswer" id="riddleAnswer" style="border-color: goldenrod">
-        <input id="submitButton" type="submit" value="Submit Answer" style="background-color: red">
+        <input type="text" name="riddleAnswer" id="riddleAnswer" style="border-color: goldenrod" placeholder="Enter your answer...">
+        <input id="submitButton" type="submit" value="Submit Answer" style="background-color: #a80c0c; color: #dbafaf">
         <p>Think carefully, for the correct answer will allow you passage.</p>
     </form>
 
 </section>
 
 <script>
-    let riddleAnswer = document.getElementById(riddleAnswer);
-    let submitButton = document.getElementById(submitButton);
+    let riddleAnswer = document.getElementById("riddleAnswer");
+    let submitButton = document.getElementById("submitButton");
 
-    function buttonColor(correctAnswer, answerInput) {
-        answerInput = riddleAnswer.textContent;
-        if (answerInput === correctAnswer){
-            submitButton.style.background="red";
+    function buttonColor() {
+        if (riddleAnswer.value === "echo"){
+            submitButton.style.background = "green";
+            submitButton.style.color = "white";
+            submitButton.disabled = false;
+        }else{
+            submitButton.style.background = "#a80c0c";
+            submitButton.style.color = "#dbafaf";
+            submitButton.disabled = true;
         }
     }
 
-    riddleAnswer.addEventListener("keypress", function() {
-        buttonColor("echo", )
-    }
+    riddleAnswer.addEventListener("input", buttonColor);
 </script>
 
 </body>
