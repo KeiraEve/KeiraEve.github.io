@@ -17,7 +17,7 @@
 
         <form action="page6.html" method="submit" id="mainForm">
             <select name="pathChoice" id="pathChoice">
-                <option value="placeholder">~ Please choose an option ~</option>
+                <option value="placeholder" selected>~ Please choose an option ~</option>
                 <option value="strength">Strength path</option>
                 <option value="wisdom">Wisdom path</option>
                 <option value="stealth">Stealth path</option>
@@ -31,23 +31,33 @@
     <script>
         let choiceSelection = document.getElementById("pathChoice");
         let form = document.getElementById("mainForm");
+        let body = document.body;
+        let container = document.querySelector(".container");
 
         function backgroundChange() {
-            const choice = choiceSelection.option.value;
-            console.log(choice); 
-            if (choice === "placeholder"){
-                body.style.background = "white";
-            }else if (choice === "strength") {
-                body.style.background = "red";
-            }else if (choice === "wisdom") {
-                body.style.background = "yellow";
-            }else if (choice === "stealth") {
-                body.style.background = "blue";
-                form.action = "page5b.html";
+            const selectedIndex = choiceSelection.selectedIndex;
+            switch (selectedIndex) {
+                case 0:
+                    body.style.background = "white";
+                    container.style.color = "black";
+                    break;
+                case 1:
+                    body.style.background = "#db4130";
+                    container.style.color = "black";
+                    break;
+                case 2: 
+                    body.style.background = "#5dad4b";
+                    container.style.color = "black";
+                    break;
+                case 3: 
+                    body.style.background = "#6a4094";
+                    container.style.color = "white";
+                    form.action = "page5b.html";
+                    break;
             }
         }
 
-        choice.addEventListener("change", backgroundChange);
+        choiceSelection.addEventListener("change", backgroundChange);
     </script>
 </body>
 
