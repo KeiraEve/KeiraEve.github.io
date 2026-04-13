@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/project-two-style.css">
+    <title>Conclusion</title>
+</head>
+<body>
+
+<section class="container">
+    <h1>Your Quest Has Concluded</h1>
+    <p id="choice"></p>
+    <p id="congrats">I hope you enjoyed your adventure. Would you like to provide feedback on your experience?</p>
+    <label for="feedback">Your Feedback:</label>
+    <textarea name="feedback" id="feedback" cols="45" rows="3" placeholder="Provide feedback..."></textarea>
+    <button>Submit Feedback</button>
+
+    <form action="welcome.html">
+        <button type="submit">Play Again</button>
+    </form>
+
+    <p style="font-size: 0.85em"><em>
+        I am truly grateful for those in my life who push my despite my shortcomings and anxieties, and who 
+        remind me of my strengths in moments of weakness and suffering. To my friends, family, and professors,
+        I deeply thank you for the encouragement which has brought me thus far.
+    </em></p>
+
+    <p style="font-size: 0.85em"><em>
+        I am also especially grateful for my professor Ninad Chaudhari who so kindly allows late submissions
+        (though this may be too late, haha). As simple as it sounds, I am someone who has always struggled with
+        deadlines due to ADHD and other reasons, and this flexibility makes the classroom feel much more enjoyable
+        and accessible for me. Thank you so much for being an awesome professor!
+    </em></p>
+</section>
+
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const confrontation = urlParams.get("confrontation");
+    const name = urlParams.get("name");
+    let choiceText = document.getElementById("choice");
+    let congratsText = document.getElementById("congrats");
+
+    if (confrontation === "aggressive") {
+        choiceText.innerHTML = "Based on your choices, Malakar exploded. The castle town experienced much damage, but the rest of the kingdom rejoiced in anarchy. The culture will remember your deeds for generations to come.";
+    } else if (confrontation === "thoughtful") {
+        choiceText.innerHTML = "Based on your choices, you gracefully took Malakar down just as he intended you to. Just as he took his final breath, he bestowed the Crystal of Wisdom upon you. You became the most powerful sorcerer the world has ever seen. The kingdom will remember your deeds for generations to come.";
+    } else if (confrontation === "sneaky") {
+        choiceText.innerHTML = "Based on your choices, you defeated Malakar before he ever caught wind of your plan. He fell dead, and his meat was used to feed the entire kingdom in one massive celebration, now known as Malakar Defeat Day. The kingdom will remember your deeds for generations to come.";
+    }
+
+    if (name !== null){
+        congratsText.innerHTML = `I hope you enjoyed your adventure, <strong>${name}</strong>. Would you like to provide feedback on your experience?`;
+    }
+</script>
+
+</body>
+</html>
